@@ -45,3 +45,12 @@ resource "aws_elasticache_subnet_group" "elasticache-subnet" {
     Name = "${var.env} elasticache subnet group"
   }
 }
+
+/* resource "aws_ssm_parameter" "elasticache_endpoint" {
+  name="${var.env}.elasticache.endpoint"
+  type="String"
+  value=aws_elasticache_cluster.elasticache.
+
+  
+} */
+
