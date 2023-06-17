@@ -46,11 +46,11 @@ resource "aws_elasticache_subnet_group" "elasticache-subnet" {
   }
 }
 
-/* resource "aws_ssm_parameter" "elasticache_endpoint" {
+resource "aws_ssm_parameter" "elasticache_endpoint" {
   name="${var.env}.elasticache.endpoint"
   type="String"
-  value=aws_elasticache_cluster.elasticache.
+  value=aws_elasticache_cluster.elasticache.cache_nodes.address
 
   
-} */
+}
 
